@@ -36,7 +36,7 @@ router.post('/', function(req, res) {
 
         console.log(users);
         res.render('users/show', {
-            author: author
+            users: users
         });
     });
 });

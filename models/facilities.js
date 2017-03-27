@@ -8,7 +8,8 @@ var FacilitiesSchema = new Schema({
     street: String,
     city: String,
     state: String,
-    contact: String,
+    contact: String
+
 });
 
   FacilitiesSchema.pre('save', function(next){
