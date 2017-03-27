@@ -13,6 +13,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #209aca;
+}
+
+ol {
+    list-style-type: none;
+    padding: 20px 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+ol li {
+    padding-bottom: 15px;
+}
+
+.btn.btn-primary, .btn.btn-danger {
+    margin-top: 20px;
+}
+
+.btn.btn-default {
+    margin-top: 50px;
+}
+
+
   </body>
 </html>
 

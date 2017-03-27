@@ -14,7 +14,7 @@ mongoose.connect('mongodb://localhost/project-2');
 
 
 var index = require('./routes/index');
-var facilities = require('./routes/facilities');
+var facility = require('./routes/facilities');
 
 var app = express();
 
