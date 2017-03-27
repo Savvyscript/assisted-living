@@ -20,10 +20,12 @@ var FacilitiesSchema = new Schema({
     next();
 });
 
-FaccilitiesSchema.virtual('fullName').get(function () {
-    return this.first_name + ' ' + this.last_name;
+FacilitiesSchema.virtual('fullName').get(function () {
+    return this.name + ' ' + this.state;
 });
 
 module.exports = mongoose.model("Facilities", FacilitiesSchema);
+
+
 
 

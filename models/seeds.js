@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/project-2');
 
-var Users= require("./models/users");
+var Users= require("./models/facilities");
 
 mongoose.promise = global.Promise;
 
@@ -69,3 +69,5 @@ facilityFour.save(function(err) {
 
   console.log('Dogwood Square is under renovation!');
 });
+
+
