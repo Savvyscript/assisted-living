@@ -28,7 +28,9 @@ var UsersSchema = new Schema({
     last_name: String,
     email: String,
     username: String,
-    password: String
+    password: String,
+    facilities:[FacilitiesSchema]
+
 });
 
 UsersSchema.pre('save', function(next){
