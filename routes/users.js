@@ -1,11 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-var Users = require('../models/users');
+var User = require('../models/user');
 
-// index authors
+// index users
 router.get('/', function(req, res) {
-    
     User.find({})
         .exec(function(err, users) {
             if(err) console.log(err);
@@ -57,7 +56,7 @@ router.get('/:id', function(req, res) {
 
 // edit users
 router.get('/:id/edit', function(req,res) {
-    Users.findById(req.params.id)
+    User.findById(req.params.id)
     .exec(function(err, users) {
         if (err) { console.log(err); }
 
@@ -69,7 +68,7 @@ router.get('/:id/edit', function(req,res) {
 
 // update users
 router.patch('/:id', function(req, res) {
-    Users.findByIdAndUpdate(req.params.id, {
+    User.findByIdAndUpdate(req.params.id, {
         first_name: req.body.first_name,
 	    last_name: req.body.last_name,
 	    email: req.body.email,
@@ -79,10 +78,23 @@ router.patch('/:id', function(req, res) {
         .exec(function(err, users) {
             if (err) { console.log(err); }
 
-            console.log(author);
+            console.log(users);
             res.render('users/show', {
                 users: users
             });
+        });
+});
+
+// delete users
+router.delete('/:id', function(req, res) {
+    User.findByIdAndRemove(req.params.id)
+        .exec(function(err, users) {
+            if (err) { console.log(err); }
+
+            console.log('User deleted.');
+            // res.send('User deleted.');
+            // redirect back to the index route
+            res.redirect('/users'); 
         });
 });
 
