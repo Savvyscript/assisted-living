@@ -27,7 +27,7 @@ var mark = new User({
   last_name: "Evans",
   username: "username",
   password: "foobar",
-  email: 'marc@gmail.com'
+  email: 'mevans@gmail.com'
 });
 
 var kevin = new User({
