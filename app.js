@@ -8,16 +8,16 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
-var db = require('./db');
-var usersRoute = require('./routes/users.js');
-var sessionsRoute = require('./routes/sessions.js');
-var facilitiesRoute = require('./routes/facilities.js');
+// var db = require('./db');
+var usersRoute = require('./routes/users');
+var sessionsRoute = require('./routes/sessions');
+var facilitiesRoute = require('./routes/facilities');
 
 mongoose.connect('mongodb://localhost/project-2');
 
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+
 
 var app = express();
 
@@ -39,9 +39,11 @@ app.use(session({
   saveUninitialized: false
 }));
 
+var usersRoute = require('./routes/users');
+var sessionsRoute = require('./routes/sessions');
+var facilitiesRoute = require('./routes/facilities');
 
-
-// app.use('/', index);
+app.use('/', index);
 app.use('/users', usersRoute);
 app.use('/sessions', sessionsRoute);
 app.use('/users/:userId/facilities', facilitiesRoute);
@@ -64,4 +66,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(4000);
+// app.listen(4000);

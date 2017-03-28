@@ -1,4 +1,4 @@
-var Schema = require('../db/schema')
+var Schema = require('../dbs/schema')
 var mongoose = require('mongoose');
 
 
