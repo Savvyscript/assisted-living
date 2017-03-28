@@ -9,6 +9,9 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
 var db = require('./db');
+var usersRoute = require('./routes/users.js');
+var sessionsRoute = require('./routes/sessions.js');
+var facilitiesRoute = require('./routes/facilities.js');
 
 mongoose.connect('mongodb://localhost/project-2');
 
@@ -38,10 +41,12 @@ app.use(session({
 
 
 
-app.use('/', index);
-app.use('/users', users);
+// app.use('/', index);
+app.use('/users', usersRoute);
+app.use('/sessions', sessionsRoute);
+app.use('/users/:userId/facilities', facilitiesRoute);
 
-// catch 404 and forward to error handler
+
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
@@ -59,4 +64,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+app.listen(4000);

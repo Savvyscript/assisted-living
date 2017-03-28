@@ -1,0 +1,12 @@
+
+facilities.get('/:id/edit', function(req,res) {
+    Facilities.findById(req.params.id)
+    .exec(function(err, author) {
+        if (err) { console.log(err); }
+
+        res.render('authors/edit', {
+            facilities: facilities
+        });
+    });
+});
+
