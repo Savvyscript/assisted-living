@@ -8,6 +8,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
+require('dotenv').config()
 // var db = require('./db');
 var usersRoute = require('./routes/users');
 var sessionsRoute = require('./routes/sessions');
