@@ -1,14 +1,15 @@
- .h1 {
+ h1 {
 	text-align: center;
 
 
 }
 
-.body {
-
- background-image: url("nature.jpg");
+body {
+background-image: url("https://image.freepik.com/free-vector/nature-background-of-a-grassy-landscape_1048-1305.jpg");
 background-size: cover;
-background-repeat: no-repeat;
-margin:auto;
+background-repeat: 
+
 } 
+
+
 
