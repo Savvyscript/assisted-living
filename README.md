@@ -58,17 +58,20 @@ facilities.js,
 Views
 
 Layout: Includes header and footer
-Homepage: Main page, where users can create an account and login
+Homepage: Main page, where users can create an account and login  use /facilities
+
 User: User's main page after login
 Show: not shown
 All Users: Page where all users can be displayed showing only their profiles (NOT WORKING)
 
 
 
+
+
  Trello account [trello](https://trello.com/b/aLDTbqDu/wdi-project-2) 
 
- ![wireframe1](https://app.moqups.com/savvywave@gmail.com/VsHv0IFrYb/view/page/ad64222d5?ui=0)
+ ![wireframe1](https://i.imgur.com/YN3uKTj.png)
 
- ![ERD](http://imgur.com/a/9mZA0)
+ ![ERD](https://github.com/Savvyscript/assisted-living/blob/master/public/images/ERD.JPG)
 
 
