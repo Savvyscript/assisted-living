@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-var User = require('../models/user');
+var Users = require('../models/user');
 
 // index users
 router.get('/', function(req, res) {
-    User.find({})
+    Users.find({})
         .exec(function(err, users) {
             if(err) console.log(err);
 
@@ -23,19 +23,19 @@ router.get('/new', function(req, res) {
 
 // create users
 router.post('/', function(req, res) {
-    var user = new User({
+    var user = new Users({
         first_name: req.body.first_name,
 	    last_name: req.body.last_name,
 	    email: req.body.email,
 	    username: req.body.username,
 	    password: req.body.password,
     });
-    user.save(function(err, user){
+    user.save(function(err){
         if (err) { console.log(err); }
 
-        console.log(users);
+        // console.log(users);
         res.render('users/show', {
-            users: users
+            users: user
         });
     });
 });

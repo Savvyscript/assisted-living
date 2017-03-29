@@ -47,6 +47,7 @@ app.use('/', index);
 app.use('/users', usersRoute);
 app.use('/sessions', sessionsRoute);
 app.use('/users/:userId/facilities', facilitiesRoute);
+app.use('/facilities', facilitiesRoute);
 
 
 app.use(function(req, res, next) {

@@ -1,18 +1,22 @@
 var express = require('express');
 var router = express.Router();
 
-var Facility = require('../models/facility');
+var Facilities = require('../models/facility');
 
-// index authors
+// index facilities
+// router.get('/', function(req, res) {
+//     // res.send('facilities will be here');
+//     Facilities.find({})
+//         .exec(function(err, facilities) {
+//             if(err) console.log(err);
+
+//             // console.log(facilities);
+//             res.send(facilities);
+//         });
+// });
+
 router.get('/', function(req, res) {
-    // res.send('authors will be here');
-    Facility.find({})
-        .exec(function(err, facilities) {
-            if(err) console.log(err);
-
-            console.log(facilities);
-            res.send(facilities);
-        });
+	res.render('facilities/index');        
 });
 
 module.exports = router;
