@@ -1,5 +1,6 @@
  h1 {
 	text-align: center;
+    margin: 
 
 
 }
@@ -8,8 +9,15 @@ body {
 background-image: url("https://image.freepik.com/free-vector/nature-background-of-a-grassy-landscape_1048-1305.jpg");
 background-size: cover;
 background-repeat: 
-
 } 
+
+p {
+    float: right; 
+
+}
+
+
+
 
 
 
