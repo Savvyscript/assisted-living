@@ -20,7 +20,6 @@ Couldn't have all facilities page. This page is supposed to show other locations
 User Stories
 
 As a user I would like to:
-
 Create an account
 Successfully login
 
@@ -67,11 +66,10 @@ All Users: Page where all users can be displayed showing only their profiles (NO
 
 
 
-
  Trello account [trello](https://trello.com/b/aLDTbqDu/wdi-project-2) 
 
- ![wireframe1](https://i.imgur.com/YN3uKTj.png)
 
- ![ERD](https://github.com/Savvyscript/assisted-living/blob/master/public/images/ERD.JPG)
+![wireframe](https://github.com/Savvyscript/assisted-living/blob/master/Screen%20Shot%202017-03-29%20at%201.43.20%20PM.png)
 
+![ERD](https://github.com/Savvyscript/assisted-living/blob/master/public/images/ERD.JPG)
 
