@@ -69,7 +69,7 @@ All Users: Page where all users can be displayed showing only their profiles (NO
  Trello account [trello](https://trello.com/b/aLDTbqDu/wdi-project-2) 
 
 
-![wireframe](https://github.com/Savvyscript/assisted-living/blob/master/Screen%20Shot%202017-03-29%20at%201.43.20%20PM.png)
+![wireframe](https://i.imgur.com/HGAq11a.png)
 
-![ERD](https://github.com/Savvyscript/assisted-living/blob/master/public/images/ERD.JPG)
+![ERD](https://i.imgur.com/YN3uKTj.png)
 
