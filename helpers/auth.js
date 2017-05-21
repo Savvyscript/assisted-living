@@ -1,5 +1,8 @@
 var bcrypt = require('bcrypt-nodejs');
 var User = require('../models/user.js');
+var bodyParser = require(' body-parser');
+
+app.use( bodyParser.urlencoded({ extended: true}) );
 
 function createSecure(req, res, next) {
   var password = req.body.password
