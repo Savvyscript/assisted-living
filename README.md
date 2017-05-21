@@ -71,5 +71,5 @@ All Users: Page where all users can be displayed showing only their profiles (NO
 
 ![wireframe](https://i.imgur.com/HGAq11a.png)
 
-![ERD](https://i.imgur.com/cddOo7J.jpg)
+![ERD](https://i.imgur.com/BnLIcsm.jpg)
 
