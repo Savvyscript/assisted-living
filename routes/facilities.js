@@ -16,7 +16,7 @@ var Facilities = require('../models/facility');
 // });
 
 router.get('/', function(req, res) {
-	res.render('facilities/index');        
+	res.render('/index');        
 });
 
 module.exports = router;

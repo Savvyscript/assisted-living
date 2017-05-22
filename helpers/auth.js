@@ -1,6 +1,7 @@
 var bcrypt = require('bcrypt-nodejs');
 var User = require('../models/user.js');
 var bodyParser = require(' body-parser');
+var passport = require('passport');
 
 app.use( bodyParser.urlencoded({ extended: true}) );
 

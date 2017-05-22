@@ -1,4 +1,4 @@
-pry = require('pryjs');
+var pry = require('pryjs');
 var express = require('express');
 var mongoose = require('mongoose');
 var path = require('path');
@@ -45,7 +45,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 app.use(session({
   secret: "derpderpderpcats",
-  resave: false,
+  resave: true,
   saveUninitialized: false
 }));
 
