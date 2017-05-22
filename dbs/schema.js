@@ -42,9 +42,6 @@ UsersSchema.pre('save', function(next){
     next();
 });
 
-// UsersSchema.virtual('fullName').get(function () {
-//     return this.first_name + ' ' + this.last_name;
-// });
 
 var UsersModel = mongoose.model('User', UsersSchema);
 var FacilitiesModel = mongoose.model('Facilities', FacilitiesSchema);

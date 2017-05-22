@@ -1,12 +1,40 @@
 
-facilities.get('/:id/edit', function(req,res) {
-    Facilities.findById(req.params.id)
-    .exec(function(err, facilities) {
-        if (err) { console.log(err); }
 
-        res.render('facilities/edit', {
-            facilities: facilities
-        });
-    });
-});
+<h1>Add a Facility</h1>
+
+<div class="row">
+    <form action="/users" method="POST" class="col-md-6 col-md-offset-3">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="Name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="street">Street:</label>
+            <input type="text" name="last_name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" name="city" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" name="state" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="zip code">Zip Code</label>
+            <input type="text" name="publication_year" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact:</label>
+            <input type="text" name="contact" class="form-control">
+        </div>
+        <div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+
+<a href="/facilities" class="btn btn-default">Main Page</a>
+
+
 

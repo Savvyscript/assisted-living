@@ -13,11 +13,9 @@ function createSecure(req, res, next) {
 }
 
 function loginUser(req, res, next) {
-  // YOU MIGHT CHANGE EMAIL TO USERNAME IF YOU DON'T WANT TO STORE EMAILS
   var email = req.body.email;
   var password = req.body.password;
 
-  // var query = User.findOne({ email: email }).exec()
   User.findOne({email: email})
     .exec(function(err, user) {
       if (err) {console.log(err);}
@@ -28,18 +26,7 @@ function loginUser(req, res, next) {
       }
           next();
     });
-  // query.then(function(foundUser){
-  //   if (foundUser == null) {
-  //     res.json({status: 401, data: "unauthorized"})
-
-  //   } else if (bcrypt.compareSync(password, foundUser.password_digest)) {
-  //     req.session.currentUser = foundUser;
-  //   }
-  //   next()
-  // })
-  // .catch(function(err){
-  //   res.json({status: 500, data: err})
-  // });
+  
 }
 
 function authorize(req, res, next) {
